@@ -1,0 +1,111 @@
+* {
+  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62, 5%;
+}
+body {
+  font-size: 1.6rem;
+}
+a {
+  text-decoration: dotted;
+  font-weight: 900;
+}
+a:hover {
+  color: #ffff; /*Clicavel*/
+}
+ul {
+  list-style: none;
+}
+.btn {
+  /*Link com cara de botão*/
+  border: 1px solid #333;
+  padding: 2px 15px;
+  color: #333;
+}
+.btn:hover {
+  background-color: #333;
+  color: #ffff;
+}
+/*Header da pagina*/
+.header {
+  width: 100%;
+  height: 10rem;
+  background-color: #333;
+  color: #ffff;
+  padding: 2rem;
+  display: flex; /*Posicionar os elementos*/
+  align-items: center;
+  justify-content: space-between;
+}
+.header ul {
+  display: flex; /*Um ao lado do outro*/
+  gap: 2rem;
+}
+/*Fim do header*/
+/*Conteudo principal*/
+main {
+  width: 100%;
+  min-height: 100vh; /*altura Minima, ele cresce conforme o conteudo*/
+  padding: 2rem;
+  background-color: #f4f4f4;
+}
+/*Fim do Conteudo principal*/
+/*article da pagina*/
+.article {
+  margin: 2rem auto;
+  min-height: 70vh;
+  border: 1px solid #666;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.article h1 {
+  font-size: 5vmin;
+  margin: 2rem 0;
+}
+.article p {
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+/*Fim do article*/
+/*Section com div e aside*/
+.section {
+  margin: 2rem auto;
+  min-height: 30vh;
+  border: 1px solid #666;
+  padding: 2rem;
+  display: flex; /*Posiconamento dos elementos*/
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap; /*isso não deixa o conteudo estourar, quando a pagina é reduzida*/
+  gap: 1rem;
+}
+.section div,
+.section aside {
+  width: 40rem;
+  height: 30rem;
+  padding: 4rem 2rem;
+  background-color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 3rem;
+}
+.section aside li {
+  margin-bottom: 1rem;
+}
+/*Fim da section*/
+/* rodapé*/
+/* rodapé */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
